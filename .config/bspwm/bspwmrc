@@ -1,0 +1,20 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d 1 2 3 4 5 6 7  
+
+bspc config border_width        2 
+bspc config window_gap          12
+bspc config normal_border_color "#32344A"
+bspc config focused_border_color "787C99"
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# Mouse Cursor
+xsetroot -cursor_name left_ptr
+
+# Start Polybar
+$HOME/.config/polybar/launch.sh
