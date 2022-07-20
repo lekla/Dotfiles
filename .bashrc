@@ -8,6 +8,6 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 
-alias config='/usr/bin/git --git-dir=$HOME/Dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
