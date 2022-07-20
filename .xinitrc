@@ -52,7 +52,8 @@ fi
 setxkbmap de &
 
 # Screen Resolution
-xrandr --output Virtual-1 --mode 1920x1080
+# xrandr --output Virtual-1 --mode 1920x1080
+xrandr --output DP-0 --primary --left-of HDMI-0
 
 # Wallpaper
 nitrogen --restore &
