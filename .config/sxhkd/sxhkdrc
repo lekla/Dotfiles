@@ -10,6 +10,9 @@ super + Return
 super + @space
 	$HOME/.config/rofi/launchers/misc/launcher.sh
 
+super + shift + @space
+	$HOME/.config/rofi/powermenu/powermenu.sh
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
