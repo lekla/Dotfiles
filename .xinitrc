@@ -53,13 +53,13 @@ setxkbmap de &
 
 # Screen Resolution
 # xrandr --output Virtual-1 --mode 1920x1080
-xrandr --output DP-0 --primary --left-of HDMI-0
+xrandr --output DP-0 --mode 3440x1440 --rate 143.92 --primary --left-of HDMI-0
 
 # Wallpaper
 nitrogen --restore &
 
 # Compositor
-picom -f &
+picom --experimental-backend &
 
 # Window Manager
 exec bspwm
