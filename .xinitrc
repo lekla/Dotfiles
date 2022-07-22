@@ -53,7 +53,14 @@ setxkbmap de &
 
 # Screen Resolution
 # xrandr --output Virtual-1 --mode 1920x1080
-xrandr --output DP-0 --mode 3440x1440 --rate 143.92 --primary --left-of HDMI-0
+# xrandr --output DP-0 --mode 3440x1440 --rate 143.92 --primary --left-of HDMI-0
+my_external_monitor = $(xrandr --query | grep 'HDMI-0')
+if [[ $my_external_monitor = *connected* ]]; then
+	xrandr --output DP-0 --mode 3440x1440 --rate 143.92 --primary --output HDMI-0 --mode 1920x1080 --right-of DP-0
+else
+	xrandr --output DP-0 --mode 3440x1440 --rate 143.92 --primary
+fi
+
 
 # Wallpaper
 nitrogen --restore &
