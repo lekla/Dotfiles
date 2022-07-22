@@ -1,0 +1,17 @@
+[colors]
+
+background = #AA000000
+background-alt = #AA373B41
+foreground = #AAC5C8C6
+
+primary = #F0C674 
+secondary = #8ABEB7
+alert = #A54242
+disabled = #707880
+
+purple = #C678DD
+red = #FF6C6B
+darker-blue = #A9A1E1
+lighter-blue = #46D9FF
+green = #98BE65
+white = #FFFFFF
